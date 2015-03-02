@@ -1,17 +1,21 @@
 #Este programa esta hecho para calcular el programa de un numero N
 
-num = int(input("Dame un numero: "))
-factorial = 1
+a='s'
 
-if num < 0:
+while(a=='s'):
+    num = int(input("Dame un numero: "))
+    factorial = 1
 
-  print("Sorry, el factorial no existe en numeros negativos")
+    if num < 0:
 
-elif num == 0:
+        print("Sorry, el factorial no existe en numeros negativos")
 
-    print("El factorial de 0 es 1")
+    elif num == 0:
 
-else:
-    for i in range(1,num + 1):
-        factorial = factorial*i
-    print("El factorial de ",num,"es",factorial)
+        print("El factorial de 0 es 1")
+
+    else:
+        for i in range(1,num + 1):
+            factorial = factorial*i
+        print("El factorial de ",num,"es",factorial)
+        a=input("Quieres intentar con otro numero? s/n  ")
